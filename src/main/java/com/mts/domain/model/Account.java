@@ -21,11 +21,11 @@ public class Account {
 	private String number;
 	
 	private String agency;
-	
-	@Column(scale = 2, precision = 12)
+	//99.999.999.999,99
+	@Column(precision = 13, scale = 2)
 	private BigDecimal balance;
 	
-	@Column(name = "additional_limit", scale = 2, precision = 12)
+	@Column(name = "additional_limit", precision = 13, scale = 2)
 	private BigDecimal limit;
 
 }
